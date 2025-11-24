@@ -32,7 +32,6 @@ p {
 
 
 
-
 /* GLOBAL LINKS */
 a {
     color: #0055ff;
@@ -47,6 +46,8 @@ a:hover {
 a:active {
     color: #001f66;
 }
+
+
 
 /* BUTTONS */
 button,
@@ -72,21 +73,22 @@ button:active,
 
 
 
-
 /* SPACING SCALE */
 .section {
     padding: 80px 0;
 }
 
 .section-title {
-    margin-bottom: 40px;
+    margin-bottom: 48px;
 }
+
+
 
 /* Content blocks (surfaces) */
 .service-item,
 .resume-item,
 .portfolio-info {
-    padding: 24px;
+    padding: 28px 28px;
     border: 1px solid #e6e6e6;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
@@ -94,18 +96,61 @@ button:active,
 }
 
 
-/* NAVBAR CUSTOM */
-#header {
-    background: #ffffffcc;
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid #ddd;
+
+/* Space between cards */
+.resume-item {
+    margin-bottom: 20px;
 }
 
+
+
+
+
+/* COMPACT DARK NAVBAR (only version kept) */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.88);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+    padding: 5px 0;
+}
+
+/* Navbar links */
 #navmenu ul li a {
-    padding: 10px 18px;
+    padding: 7px 12px;
     font-weight: 600;
+    font-size: 0.90rem;
+    color: #ffffffd9;
+    transition: 0.25s;
+    border-radius: 6px;
 }
 
 #navmenu ul li a:hover {
-    color: #0055ff;
+    background: rgba(255, 255, 255, 0.12);
+    color: #fff;
+}
+
+#navmenu .active>a {
+    background: rgba(255, 255, 255, 0.18);
+    color: #fff;
+}
+
+
+
+/* BACK TO TOP BUTTON CUSTOM */
+#scroll-top {
+    background: #0055ff;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#scroll-top:hover {
+    background: #003ecc;
 }
