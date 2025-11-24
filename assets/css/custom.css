@@ -241,13 +241,15 @@ button:active,
     border-radius: 0;
 }
 
-/* Zebra striping */
-.pricing .pricing-item:nth-child(odd) {
-    background: #fafbff;
+/* SOL KOD SENDE ZATEN VARSA, SADECE RENKLERİ BELİRGİNLEŞTİR */
+.pricing .row.gy-4.gx-lg-5>.col-lg-6:nth-child(odd) .pricing-item {
+    background: #f8f9fb;
+    /* açık mavi */
 }
 
-.pricing .pricing-item:nth-child(even) {
+.pricing .row.gy-4.gx-lg-5>.col-lg-6:nth-child(even) .pricing-item {
     background: #ffffff;
+    /* beyaz */
 }
 
 /* Hover efekti */
@@ -267,4 +269,14 @@ button:active,
     text-align: right;
     /* Sayı (fiyat) sağa hizalı */
     margin: 0;
+}
+
+
+.pricing-header-row {
+    max-width: 700px;
+    margin: 0 auto 8px auto;
+    padding: 8px 18px;
+    font-weight: 600;
+    background: #f0f3ff;
+    border-radius: 8px 8px 0 0;
 }
