@@ -69,3 +69,43 @@ button:active,
 .btn:active {
     background-color: #002f99;
 }
+
+
+
+
+/* SPACING SCALE */
+.section {
+    padding: 80px 0;
+}
+
+.section-title {
+    margin-bottom: 40px;
+}
+
+/* Content blocks (surfaces) */
+.service-item,
+.resume-item,
+.portfolio-info {
+    padding: 24px;
+    border: 1px solid #e6e6e6;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    background: #fff;
+}
+
+
+/* NAVBAR CUSTOM */
+#header {
+    background: #ffffffcc;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid #ddd;
+}
+
+#navmenu ul li a {
+    padding: 10px 18px;
+    font-weight: 600;
+}
+
+#navmenu ul li a:hover {
+    color: #0055ff;
+}
